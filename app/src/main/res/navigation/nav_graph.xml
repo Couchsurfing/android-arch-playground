@@ -9,7 +9,7 @@
         android:name="com.nicolasmilliard.playground.ui.home.ItemDetailScreen"
         android:label="item_detail_screen"
         tools:layout="@layout/screen_home">
-        <argument android:name="notificationId" />
+        <argument android:name="itemId" app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/homeScreen"

@@ -9,7 +9,7 @@ class OpenItemDetailsHandler(
     override fun invoke(item: Item) {
         val action =
             HomeScreenDirections.actionHomeScreenToItemDetailScreen(
-                "Test"
+                item.id
             )
         navController.navigate(action)
     }
