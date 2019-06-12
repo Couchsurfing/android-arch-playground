@@ -4,7 +4,7 @@ object Config {
 
     const val buildToolsVersion = "29.0.0"
 
-    private const val navigationVersion = "2.1.0-alpha02"
+    private const val navigationVersion = "2.1.0-alpha05"
 
     object Versions {
         const val major = 1
