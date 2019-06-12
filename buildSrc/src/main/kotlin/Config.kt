@@ -124,7 +124,7 @@ object Config {
         // Misc
         const val material = "com.google.android.material:material:1.0.0"
         const val timber = "com.jakewharton.timber:timber:4.7.1"
-        const val rxJava = "io.reactivex.rxjava2:rxjava:2.2.8"
+        const val rxJava = "io.reactivex.rxjava2:rxjava:2.2.9"
         const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:2.1.0"
         const val picasso = "com.squareup.picasso3:picasso:3.0.0-SNAPSHOT"
         const val okHttp = "com.squareup.okhttp3:okhttp:3.14.2"
