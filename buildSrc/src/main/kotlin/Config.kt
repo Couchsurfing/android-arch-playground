@@ -60,7 +60,6 @@ object Config {
             const val pagingRx = "androidx.paging:paging-rxjava2:$pagingVersion"
             const val pagingRuntimeKtx = "androidx.paging:paging-runtime-ktx:$pagingVersion"
             const val pagingCommon = "androidx.paging:paging-common:$pagingVersion"
-            const val viewPager2 = "androidx.viewpager2:viewpager2:1.0.0-alpha03"
             const val dynamicAnimation = "androidx.dynamicanimation:dynamicanimation-ktx:1.0.0-alpha02"
             const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
             const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:$navigationVersion"

@@ -125,7 +125,6 @@ dependencies {
     implementation(Config.Libs.AndroidX.pagingRx)
     implementation(Config.Libs.AndroidX.pagingRuntimeKtx)
     implementation(Config.Libs.AndroidX.dynamicAnimation)
-    implementation(Config.Libs.AndroidX.viewPager2)
     implementation(Config.Libs.AndroidX.navigationFragmentKtx)
     implementation(Config.Libs.AndroidX.navigationUiKtx)
     implementation(Config.Libs.AndroidX.workRuntimeKtx)
