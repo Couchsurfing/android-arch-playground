@@ -60,4 +60,3 @@ class SettingHandler(
         navController.navigate(action)
     }
 }
-
