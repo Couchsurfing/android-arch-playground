@@ -33,13 +33,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        javaCompileOptions.annotationProcessorOptions.arguments(
-            mapOf(
-                "butterknife.debuggable" to "false",
-                "butterknife.minSdk" to Config.SdkVersions.min.toString()
-            )
-        )
-
         resValue("string", "applicationId", applicationId!!)
     }
 
@@ -148,13 +141,6 @@ dependencies {
     kapt(Config.Libs.Dagger.androidProcessor)
     compileOnly(Config.Libs.Dagger.assistedInject)
     kapt(Config.Libs.Dagger.assistedInjectProcessor)
-
-    if (properties.containsKey("android.injected.invoked.from.ide")) {
-        implementation(Config.Libs.ButterKnife.reflect)
-    } else {
-        implementation(Config.Libs.ButterKnife.core)
-        kapt(Config.Libs.ButterKnife.compiler)
-    }
 
     implementation(Config.Libs.timber)
 

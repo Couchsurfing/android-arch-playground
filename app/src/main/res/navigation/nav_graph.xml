@@ -26,7 +26,7 @@
         tools:layout="@layout/screen_dashboard" />
     <fragment
         android:id="@+id/notificationsScreen"
-        android:name="com.nicolasmilliard.playground.ui.NotificationsScreen"
+        android:name="com.nicolasmilliard.playground.ui.notifications.NotificationsScreen"
         android:label="notifications_screen"
         tools:layout="@layout/screen_notifications">
         <action

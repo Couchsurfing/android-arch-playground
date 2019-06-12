@@ -2,11 +2,8 @@ package com.nicolasmilliard.playground.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.onNavDestinationSelected
-import butterknife.BindView
-import butterknife.ButterKnife.bind
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.nicolasmilliard.playground.R
 import dagger.Module
@@ -19,7 +16,6 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), HasAndroidInjector {
 
-    @BindView(R.id.bottom_app_bar)
     lateinit var bottomNav: BottomAppBar
 
     @Inject
@@ -30,7 +26,7 @@ class MainActivity : AppCompatActivity(), HasAndroidInjector {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-        bind(this)
+        bottomNav = findViewById(R.id.bottom_app_bar)
 
         val navController = findNavController(R.id.nav_host_fragment)
         bottomNav.apply {

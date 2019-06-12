@@ -2,7 +2,7 @@ object Config {
 
     const val kotlinVersion = "1.3.31"
 
-    const val buildToolsVersion = "28.0.3"
+    const val buildToolsVersion = "29.0.0"
 
     private const val navigationVersion = "2.1.0-alpha02"
 
@@ -93,14 +93,6 @@ object Config {
             const val assistedInject = "com.squareup.inject:assisted-inject-annotations-dagger2:$assistedInjectVersion"
             const val assistedInjectProcessor =
                 "com.squareup.inject:assisted-inject-processor-dagger2:$assistedInjectVersion"
-        }
-
-        object ButterKnife {
-            private const val version = "10.1.0"
-
-            const val core = "com.jakewharton:butterknife:$version"
-            const val compiler = "com.jakewharton:butterknife-compiler:$version"
-            const val reflect = "com.jakewharton:butterknife-reflect:$version"
         }
 
         object LeakCanary {
