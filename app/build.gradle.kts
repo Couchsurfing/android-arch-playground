@@ -45,12 +45,12 @@ android {
 
     signingConfigs {
         getByName("debug") {
-            storeFile = File("app/debug.keystore")
+            storeFile = file("debug.keystore")
             storePassword = "android"
             keyAlias = "androiddebugkey"
             keyPassword = "android"
         }
-        if (file("app/upload.keystore").exists()) {
+        if (file("upload.keystore").exists()) {
             create("upload") {
                 storeFile = rootProject.file("upload.keystore")
                 storePassword = System.getenv("UPLOAD_STORE_PASSWORD")
@@ -90,7 +90,7 @@ android {
     lintOptions {
         textReport = true
         textOutput("stdout")
-        setLintConfig(rootProject.file("app/lint.xml"))
+        setLintConfig(rootProject.file("lint.xml"))
 
         isCheckDependencies = true
         isCheckTestSources = true
