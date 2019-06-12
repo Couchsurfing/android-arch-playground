@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.KaptExtension
-
 buildscript {
     extra.apply {
         set("isCiBuild", System.getenv("CI") == "true")
@@ -26,20 +24,6 @@ allprojects {
         google()
         jcenter()
         maven(url = "https://oss.sonatype.org/content/repositories/snapshots/")
-    }
-
-    tasks.withType(JavaCompile::class).all {
-        options.compilerArgs.add(
-            "-Adagger.formatGeneratedSource=disabled"
-        )
-    }
-    afterEvaluate {
-        val kapt = extensions.findByName("kapt") as KaptExtension?
-        if (kapt != null) {
-            kapt.arguments {
-                arg("dagger.formatGeneratedSource", "disabled")
-            }
-        }
     }
 }
 

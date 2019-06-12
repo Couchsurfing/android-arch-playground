@@ -1,13 +1,12 @@
 package com.nicolasmilliard.playground
 
-import android.app.Activity
 import android.app.Application
 import com.squareup.leakcanary.LeakCanary
-import dagger.android.DispatchingAndroidInjector
-import dagger.android.HasActivityInjector
+import dagger.android.AndroidInjector
+import dagger.android.HasAndroidInjector
 import timber.log.Timber
 
-class App : Application(), HasActivityInjector {
+class App : Application(), HasAndroidInjector {
 
     private lateinit var appComponent: AppComponent
 
@@ -30,5 +29,5 @@ class App : Application(), HasActivityInjector {
         AppInjector.init(this)
     }
 
-    override fun activityInjector(): DispatchingAndroidInjector<Activity> = appComponent.activityInjector
+    override fun androidInjector(): AndroidInjector<Any> = appComponent.activityInjector
 }
