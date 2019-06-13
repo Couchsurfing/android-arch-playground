@@ -68,14 +68,6 @@ object Config {
             const val workTesting = "android.arch.work:work-testing:$workVersion"
         }
 
-        object Firebase {
-            const val core = "com.google.firebase:firebase-core:16.0.6"
-            const val auth = "com.google.firebase:firebase-auth:16.1.0"
-            const val firestore = "com.google.firebase:firebase-firestore:17.1.4"
-            const val database = "com.google.firebase:firebase-database:16.0.5"
-            const val storage = "com.google.firebase:firebase-storage:16.0.5"
-        }
-
         object PlayServices {
             const val ossLicenses = "com.google.android.gms:play-services-oss-licenses:16.0.2"
         }
