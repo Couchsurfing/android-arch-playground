@@ -1,6 +1,6 @@
 object Config {
 
-    const val kotlinVersion = "1.3.31"
+    const val kotlinVersion = "1.3.40"
 
     const val buildToolsVersion = "29.0.0"
 
