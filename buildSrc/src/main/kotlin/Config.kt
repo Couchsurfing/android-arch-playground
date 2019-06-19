@@ -69,7 +69,7 @@ object Config {
         }
 
         object PlayServices {
-            const val ossLicenses = "com.google.android.gms:play-services-oss-licenses:16.0.2"
+            const val ossLicenses = "com.google.android.gms:play-services-oss-licenses:17.0.0"
         }
 
         object Dagger {
