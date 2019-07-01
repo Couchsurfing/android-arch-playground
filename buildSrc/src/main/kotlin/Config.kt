@@ -57,14 +57,12 @@ object Config {
             const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.0-beta1"
             const val recyclerView = "androidx.recyclerview:recyclerview:1.1.0-alpha06"
             const val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-beta01"
-            const val pagingRx = "androidx.paging:paging-rxjava2:$pagingVersion"
             const val pagingRuntimeKtx = "androidx.paging:paging-runtime-ktx:$pagingVersion"
             const val pagingCommon = "androidx.paging:paging-common:$pagingVersion"
             const val dynamicAnimation = "androidx.dynamicanimation:dynamicanimation-ktx:1.0.0-alpha02"
             const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
             const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:$navigationVersion"
             const val workRuntimeKtx = "android.arch.work:work-runtime-ktx:$workVersion"
-            const val workRxJava = "android.arch.work:work-rxjava2:$workVersion"
             const val workTesting = "android.arch.work:work-testing:$workVersion"
         }
 
@@ -107,8 +105,6 @@ object Config {
         // Misc
         const val material = "com.google.android.material:material:1.0.0"
         const val timber = "com.jakewharton.timber:timber:4.7.1"
-        const val rxJava = "io.reactivex.rxjava2:rxjava:2.2.9"
-        const val rxRelay = "com.jakewharton.rxrelay2:rxrelay:2.1.0"
         const val picasso = "com.squareup.picasso3:picasso:3.0.0-SNAPSHOT"
         const val okHttp = "com.squareup.okhttp3:okhttp:4.0.0"
         const val okIo = "com.squareup.okio:okio:2.2.2"

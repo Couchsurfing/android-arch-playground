@@ -122,13 +122,11 @@ dependencies {
     implementation(Config.Libs.AndroidX.constraintLayout)
     implementation(Config.Libs.AndroidX.recyclerView)
     implementation(Config.Libs.AndroidX.viewModelKtx)
-    implementation(Config.Libs.AndroidX.pagingRx)
     implementation(Config.Libs.AndroidX.pagingRuntimeKtx)
     implementation(Config.Libs.AndroidX.dynamicAnimation)
     implementation(Config.Libs.AndroidX.navigationFragmentKtx)
     implementation(Config.Libs.AndroidX.navigationUiKtx)
     implementation(Config.Libs.AndroidX.workRuntimeKtx)
-    implementation(Config.Libs.AndroidX.workRxJava)
 
     implementation(Config.Libs.material)
 
@@ -142,9 +140,6 @@ dependencies {
     kapt(Config.Libs.Dagger.assistedInjectProcessor)
 
     implementation(Config.Libs.timber)
-
-    implementation(Config.Libs.rxJava)
-    implementation(Config.Libs.rxRelay)
 
     implementation(Config.Libs.picasso)
     implementation(Config.Libs.okHttp)
